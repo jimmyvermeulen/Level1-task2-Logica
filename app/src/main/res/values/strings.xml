@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Logica</string>
+    <string name="Title">Conjunction (AND)</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="a_and_b">A ^ B</string>
+    <string name="t">T</string>
+    <string name="f">F</string>
+    <string name="submit">Submit</string>
+    <string name="invalid_input">Input invalid! Valid inputs are %1$s and %2$s.</string>
+    <string name="incorrect">Incorrect! Check your answers and try again.</string>
+    <string name="correct">Correct! Well done!</string>
+</resources>
