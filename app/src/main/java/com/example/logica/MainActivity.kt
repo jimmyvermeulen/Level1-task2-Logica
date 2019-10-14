@@ -2,16 +2,16 @@ package com.example.logica
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
+
+
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         btnSubmit.setOnClickListener{
             checkAnswers()
         }
@@ -19,16 +19,16 @@ class MainActivity : AppCompatActivity() {
 
     //Checks if answers are valid input and correct and gives Toast message with result
     private fun checkAnswers(){
-        val answers = arrayOf(etAnswer1.text.toString().toLowerCase(),
-                              etAnswer2.text.toString().toLowerCase(),
-                              etAnswer3.text.toString().toLowerCase(),
-                              etAnswer4.text.toString().toLowerCase())
-        val validInputTrue = getString(R.string.t).toLowerCase()
-        val validInputFalse = getString(R.string.f).toLowerCase()
-        val correctAnswers = arrayOf(validInputTrue.toLowerCase(),
-                                     validInputFalse.toLowerCase(),
-                                     validInputFalse.toLowerCase(),
-                                     validInputFalse.toLowerCase())
+        val answers = arrayOf(etAnswer1.text.toString(),
+                              etAnswer2.text.toString(),
+                              etAnswer3.text.toString(),
+                              etAnswer4.text.toString())
+        val validInputTrue = getString(R.string.t)
+        val validInputFalse = getString(R.string.f)
+        val correctAnswers = arrayOf(validInputTrue,
+                                     validInputFalse,
+                                     validInputFalse,
+                                     validInputFalse)
 
         for((i, answer) in answers.withIndex()){
 
